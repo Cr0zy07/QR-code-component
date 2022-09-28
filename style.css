@@ -44,7 +44,7 @@ main {
 
 .card-body h2 {
     color: hsl(218, 44%, 22%);
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     font-weight: 700;
 }
 
