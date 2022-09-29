@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+main {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    height: 550px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 6px -6px hsl(216, 50%, 16%);
+}
+
+.card > img {
+    width: calc(320px - 3rem);
+    border-radius: 1rem;
+}
+
+.card > h1 {
+    font-size: 19px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: 1rem auto;
+}
+
+.card > p {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin: 1rem auto;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body div {
+    font-size: small;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem 0;
+}
+
+/* .card-body .price, .card-body .time {
+    font-size: small;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+} */
+
+.card-body div:first-of-type {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-body div:last-of-type {
+    color: hsl(215, 51%, 70%);
+}
+
+/*
+.card-body .price {
+    color: hsl(178, 100%, 50%);
+} */
+
+/* .card-body .time {
+    color: hsl(215, 51%, 70%);
+} */
+
+hr {
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 1px;
+    margin: 1rem auto;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.card-footer p {
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+
+.card-footer span {
+    color: hsl(215, 51%, 70%);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+}
