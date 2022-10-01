@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') top / 100% 450px no-repeat;
+    /* background-size: contain; */
+}
+
+main {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* height: 540px; */
+    width: 450px;
+    /* background-color: hsl(225, 100%, 94%); */
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px hsl(224, 23%, 55%, .5);
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card header {
+    text-align: center;
+}
+
+.card header h1 {
+    font-size: 28px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card header p {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%, .8);
+    margin-top: 1rem;
+}
+
+.card-body, .card-footer {
+    margin: 2rem 3rem;
+}
+
+.card-body > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: hsla(225, 100%, 94%, .5); */
+    background-color: hsl(225, 100%, 98%);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.card-body> div > a {
+    font-weight: 500;
+    color: hsl(245, 75%, 52%);
+    transition: opacity .5s ease;
+}
+
+.card-body > div > a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.card-body > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-body .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .price h4 {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-body .price span {
+    color: hsl(224, 23%, 55%);
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-footer button {
+    /* display: block; */
+    font-weight: 900;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    transition: opacity .5s ease;
+    box-shadow: 0px 8px 20px hsl(245, 75%, 52%, .5);
+}
+
+.card-footer button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.card-footer button:focus {
+    border: none;
+    outline: none;
+}
+
+.card-footer a {
+    text-decoration: none;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    transition: color .5s ease;
+}
+
+.card-footer a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+}
