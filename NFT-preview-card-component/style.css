@@ -34,7 +34,7 @@ main {
 }
 
 .card .card-image {
-    height:calc(320px - 3rem);
+    height: calc(320px - 3rem);
     width: calc(320px - 3rem);
     border-radius: 1rem;
     position: relative;
@@ -48,7 +48,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background: hsla(178, 100%, 50%, .5) url('images/icon-view.svg') no-repeat center;
+    background: hsl(178, 100%, 50%, .5) url('images/icon-view.svg') no-repeat center;
     opacity: 0;
     transition: .5s ease;
 }
